@@ -39,7 +39,7 @@
                     <td class="border border-black-600 p-2">{$item.birthdate}</td>
                     <td class="border border-black-600 p-2">{$item.comments}</td>
                     <td class="border border-black-600 p-2">{$item.filename}</td>
-                    <td class="border border-black-600 p-2"><a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="update.php?id=<?php echo $row['id']; ?>">Edit</a>&nbsp;&nbsp; <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="delete.php?id=<?php echo $row['id']; ?>">Delete</a></td>
+                    <td class="border border-black-600 p-2"><a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="update.php?id={$item.id}">Edit</a>&nbsp;&nbsp; <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline" href="delete.php?id={$item.id}">Delete</a></td>
                 </tr>
         {/foreach}
             </tbody>

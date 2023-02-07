@@ -12,8 +12,8 @@ require './operations.php';
 $smarty = new Smarty;
 //$smarty->force_compile = true;
 $smarty->debugging = true;
-$smarty->caching = true;
-$smarty->cache_lifetime = 120;
+// $smarty->caching = true;
+// $smarty->cache_lifetime = 120;
 
 $database = new Database();
 $db = $database -> getConnection();

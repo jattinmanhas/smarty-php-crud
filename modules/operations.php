@@ -124,15 +124,6 @@
                 $newFile = $finalFile;
             }
 
-            print_r($name);
-            print_r($age);
-            print_r($country);
-            print_r($gender);
-            print_r($lanugages);
-            print_r($newFile);
-            print_r($time);
-            print_r($comments);
-
             $sql ="Update `task_second` SET `name`='$name', `age`='$age', `country`='$country', `gender`='$gender', `languages`='$language', `birthdate`='$time', `filename`='$newFile', `comments`='$comments' where `id`='$id'";
 
             $result = $this -> conn -> prepare($sql);

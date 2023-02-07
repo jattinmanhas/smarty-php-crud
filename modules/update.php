@@ -19,10 +19,18 @@ $database = new Database();
 $db = $database -> getConnection();
 
 $operation = new Operations($db);
-$data = $operation -> read();
+$data = $operation -> getData();
 
+// print_r($data['0']['languages']);
+$a = $data['0']['languages'];
+$b = explode(",",$a);
+
+if(isset($_POST['submit'])){
+    $result = $operation -> update();
+}
 
 $smarty->assign('data',$data);
+$smarty->assign('b',$b);
 
 
-$smarty->display('../Smarty_crud/templates/view.tpl');
+$smarty->display('../Smarty_crud/templates/update.tpl');
