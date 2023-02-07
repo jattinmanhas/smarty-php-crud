@@ -13,3 +13,11 @@ phpunit*
 .phpunit.result.cache
 vendor/*
 composer.lock
+modules/templates_c
+modules/cache
+Smarty_crud/cache
+Smarty_crud/configs
+Smarty_crud/plugins
+tests
+utilities
+
