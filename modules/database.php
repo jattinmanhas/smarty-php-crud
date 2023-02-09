@@ -12,7 +12,7 @@
             try{
                 $this -> conn = new PDO("mysql:host=" . $this->host . ";dbname=".$this->db_name,$this -> username,$this -> password);
                 if($this -> conn){
-                    echo "Connected to the database Successfully.";
+                    // echo "Connected to the database Successfully.";
                 }
             }catch(Exception $e){
                 echo "Connection error: ".$e -> getMessage();

@@ -20,4 +20,6 @@ Smarty_crud/configs
 Smarty_crud/plugins
 tests
 utilities
-
+docs
+lexer
+tests
